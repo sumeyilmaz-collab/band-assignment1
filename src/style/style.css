@@ -1,0 +1,140 @@
+/* RESET */
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #ffffff;
+}
+
+main {
+  margin: 0;
+}
+
+/* HEADER */
+.site-header {
+  background-color: #744312;
+  padding: 16px 0;
+}
+
+.header-inner {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo img {
+  height: 32px;
+}
+
+/* NAVIGATION */
+.main-nav {
+  display: flex;
+  gap: 32px;
+  align-items: center;
+}
+
+.nav-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fbe7c5;
+  text-decoration: none;
+  font-size: 17px;
+  font-weight: 500;
+  padding: 8px 18px;
+  border-radius: 999px;
+}
+
+.nav-link:hover {
+  text-decoration: none;
+  opacity: 0.9;
+}
+
+.nav-link.active {
+  background-color: #fbe7c5;
+  color: #744312;
+  font-weight: 600;
+}
+
+/* HERO SECTION */
+.hero {
+  position: relative;
+  min-height: 100vh;
+  background-image: url("/images/hero-image.jpg");
+  background-size: cover;
+  background-position: center; /* center bottom yerine center */
+  background-repeat: no-repeat;
+}
+
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;          
+  justify-content: center;      
+  padding: 80px 40px 120px;     
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.1) 0%,
+    rgba(0, 0, 0, 0.7) 70%,
+    rgba(0, 0, 0, 0.9) 100%
+  );
+}
+
+.hero-content {
+  text-align: center;
+  color: #ffffff;
+}
+
+.hero-title {
+  margin: 0;
+  font-size: 100px;
+  letter-spacing: 0.32em;
+  font-weight: 300;
+}
+
+.tour-button {
+  margin-top: 32px;
+  padding: 14px 38px;
+  border-radius: 999px;
+  border: none;
+  background-color: #f28c2b;
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 17px;
+  cursor: pointer;
+}
+
+.tour-button:hover {
+  opacity: 0.9;
+}
+
+
+/* FOOTER */
+
+.site-footer {
+  background-color: #f8e3c4;         
+  padding: 16px 0 20px;
+  box-shadow: 0 -8px 20px rgba(0, 0, 0, 0.25);
+}
+
+.footer-inner {
+  max-width: 1400px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+}
+
+.social-link img {
+  width: 25px;
+  height: 25px;
+  display: block;
+}
