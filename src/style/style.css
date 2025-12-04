@@ -187,14 +187,14 @@ main {
 .news-page {
   background-color: #351C0A;
   min-height: calc(100vh - 80px);
-  padding: 40px 0 60px;
+  padding: 60px 0 60px;
   color: #fbe7c5;
 }
 
 .news-header {
   text-align: center;
   max-width: 800px;
-  margin: 0 auto 48px auto;
+  margin: 0 auto 40px auto;
   padding: 0 24px;
 }
 
@@ -214,10 +214,12 @@ main {
   padding: 0 24px;
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 32px;
+  gap: 50px;
 }
 
-
+.news-card {
+  text-align: center;
+}
 
 .news-image {
   width: 100%;
