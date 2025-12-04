@@ -9,7 +9,7 @@ image: "/images/post1-image.png"
 
 ![Fyodor Dormant Cover](/images/post1-image.png)
 
-# New Single “Fyodor Dormant”
+# “Fyodor Dormant”
 
 Beirut has released a new single as part of the *Artifacts* collection, bringing warm brass tones and nostalgic melodies back into the spotlight. Although the track is newly presented within this compilation, it carries the emotional depth and cinematic feeling that longtime fans immediately recognise.
 
