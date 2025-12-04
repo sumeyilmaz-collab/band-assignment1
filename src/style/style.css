@@ -41,33 +41,33 @@ main {
 }
 
 .nav-link {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: #fbe7c5;
+  font-size: 16px;
   text-decoration: none;
-  font-size: 17px;
-  font-weight: 500;
-  padding: 8px 18px;
-  border-radius: 999px;
+  color: #fbe7c5;
+  padding: 8px 16px;
+  border-radius: 999px; 
+  transition: background-color 0.2s ease, color 0.2s ease, transform 0.15s ease;
 }
+
 
 .nav-link:hover {
-  text-decoration: none;
-  opacity: 0.9;
+  background-color: #fbe7c5;
+  color: #5a3214;
+  transform: translateY(1px);
 }
 
-.nav-link.active {
-  background-color: #fbe7c5;
-  color: #744312;
-  font-weight: 600;
+
+.nav-link:focus-visible {
+  outline: 2px solid #fbe7c5;
+  outline-offset: 2px;
 }
+
 
 /* HERO SECTION */
 .hero {
   position: relative;
   min-height: 100vh;
-  background-image: url("/images/hero-image.jpg");
+  background-image: url("/images/hero-image-1.jpg");
   background-size: cover;
   background-position: center; /* center bottom yerine center */
   background-repeat: no-repeat;
@@ -91,17 +91,19 @@ main {
 .hero-content {
   text-align: center;
   color: #ffffff;
+  padding-top: 180px;
 }
 
 .hero-title {
   margin: 0;
-  font-size: 100px;
+  font-size: 200px;
   letter-spacing: 0.32em;
   font-weight: 300;
+  transform: translateY(40px);
 }
 
 .tour-button {
-  margin-top: 32px;
+  margin-top: 20px;
   padding: 14px 38px;
   border-radius: 999px;
   border: none;
@@ -137,4 +139,45 @@ main {
   width: 25px;
   height: 25px;
   display: block;
+}
+
+
+/* ABOUT PAGE */
+
+.about-page {
+  background-color: #351C0A; 
+  min-height: calc(100vh - 80px); 
+  padding: 80px 0 60px;
+}
+
+.about-hero {
+  max-width: 700px;
+  margin: 0 auto 40px auto;
+  padding: 0 24px;
+}
+
+.about-image {
+  width: 100%;
+  display: block;
+  border-radius: 32px;
+}
+
+.about-content {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 24px;
+  text-align: center;
+  color: #fbe7c5;
+}
+
+.about-title {
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 24px;
+}
+
+.about-text {
+  font-size: 15px;
+  line-height: 1.7;
+  margin-bottom: 16px;
 }
