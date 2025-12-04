@@ -1,0 +1,53 @@
+/* Styles only for post pages */
+
+.post-page {
+  background-color: #351c0a;
+  min-height: calc(100vh - 80px);
+  padding: 80px 0 60px;
+}
+
+.post-wrapper {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 24px 60px;
+  color: #fbe7c5;
+}
+
+.post-title {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+
+.post-meta {
+  font-size: 14px;
+  opacity: 0.8;
+  margin-bottom: 8px;
+}
+
+.post-description {
+  font-size: 15px;
+  margin-bottom: 24px;
+}
+
+.post-content {
+  font-size: 15px;
+  line-height: 1.8;
+}
+
+.post-content h2 {
+  font-size: 22px;
+  margin-top: 28px;
+  margin-bottom: 12px;
+}
+
+.post-content p {
+  margin-bottom: 14px;
+}
+.post-content img {
+  max-width: 400px;      
+  width: 100%;
+  display: block;
+  margin: 20px 0;         
+  border-radius: 24px;
+}
