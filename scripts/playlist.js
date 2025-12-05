@@ -1,6 +1,6 @@
 // Simple Playlist – add & shuffle songs
 
-// Gizli listeden başlangıç şarkılarını al
+
 let list = document.getElementsByClassName("list");
 const songs = [];
 
@@ -8,10 +8,9 @@ for (let i = 0; i < list.length; i++) {
   songs.push(list[i].innerHTML);
 }
 
-// Listeyi ekranda göstermek için yardımcı fonksiyon
 function renderList(items) {
   const listEl = document.getElementById("newList");
-  // Eski elemanları sil
+  // Delete old items
   listEl.innerHTML = "";
 
   for (let i = 0; i < items.length; i++) {
@@ -21,10 +20,10 @@ function renderList(items) {
   }
 }
 
-// Sayfa açılır açılmaz başlangıç listesi çizilsin
+
 renderList(songs);
 
-// Yeni şarkı ekleme
+// New song add
 document.getElementById("addMusic").addEventListener("click", function () {
   const input = document.getElementById("musicInput");
   const value = input.value.trim();
@@ -46,7 +45,7 @@ function shuffleArray(array) {
   }
 }
 
-// Shuffle butonu
+// Shuffle button
 document.getElementById("shufflebtn").addEventListener("click", function () {
   shuffleArray(songs);
   renderList(songs);
