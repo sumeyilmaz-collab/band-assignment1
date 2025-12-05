@@ -1,6 +1,5 @@
 // Simple Playlist – add & shuffle songs
 
-
 let list = document.getElementsByClassName("list");
 const songs = [];
 
