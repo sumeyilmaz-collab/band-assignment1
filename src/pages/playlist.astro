@@ -1,0 +1,42 @@
+---
+import Layout from "../layouts/layout.astro";
+---
+
+<Layout>
+  <section class="playlist-page">
+    <div class="playlist-header">
+      <h1 class="playlist-title">Playlist</h1>
+
+      <button id="shufflebtn" class="playlist-shuffle">
+        Shuffle Playlist
+      </button>
+    </div>
+
+    {/* JS'in göstereceği asıl liste */}
+    <ol id="newList" class="playlist-list"></ol>
+
+    <div class="playlist-input">
+      <input
+        id="musicInput"
+        type="text"
+        placeholder="Type a song name.."
+      />
+      <button id="addMusic" class="playlist-add">
+        Add Song
+      </button>
+    </div>
+
+    {/* Gizli başlangıç listesi – arkadaşının koduna uyum için bırakıyoruz */}
+    <div hidden>
+      <ul>
+        <li class="list">Elephant Gun</li>
+        <li class="list">Nantes</li>
+        <li class="list">Santa Fe</li>
+        <li class="list">Vagabond</li>
+        <li class="list">Postcards From Italy</li>
+      </ul>
+    </div>
+
+    <script src="/scripts/playlist.js" defer></script>
+  </section>
+</Layout>
